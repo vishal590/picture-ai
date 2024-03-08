@@ -25,7 +25,7 @@ export const Collection = ({
   totalPages = 1,
   page,
 }: {
-  images: IImage[];
+  images: any;
   totalPages?: number;
   page: number;
   hasSearch?: boolean;
