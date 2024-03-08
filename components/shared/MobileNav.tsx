@@ -14,10 +14,10 @@ const MobileNav = () => {
     <header className="header">
       <Link href="/" className="flex items-center gap-2 md:py-2">
         <Image
-          src="/assets/images/logo-text.svg"
+          src="/assets/images/logo-t.png"
           alt="logo"
-          width={160}
-          height={20}
+          width={90}
+          height={10}
         />
       </Link>
       <nav className="flex gap-2">
@@ -37,10 +37,10 @@ const MobileNav = () => {
             <SheetContent className="sheet-content sm:w-64">
               <>
                 <Image
-                  src="/assets/images/logo-text.svg"
+                  src="/assets/images/logo-t.png"
                   alt="logo"
-                  width={142}
-                  height={20}
+                  width={90}
+                  height={10}
                 />
                 <ul className="header-nav_elements">
                   {navLinks.map((link) => {

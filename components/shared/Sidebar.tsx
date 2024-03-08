@@ -14,7 +14,7 @@ const Sidebar = () => {
     <aside className='sidebar'>
       <div className='flex size-full flex-col gap-4'>
         <Link href='/' className='sidebar-logo'>
-          <Image src='/assets/images/logo-text.svg' alt='logo' width={160} height={20} />
+          <Image src='/assets/images/logo-t.png' alt='logo' width={90} height={10} />
         </Link>
 
         <nav className="sidebar-nav">
@@ -23,7 +23,7 @@ const Sidebar = () => {
               {navLinks.slice(0, 6).map((link) => {
                 const isActive = link.route === pathname
                 return(
-                  <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'}`}>
+                  <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-gradient-to-r from-red-500 to-indigo-700 text-white' : 'text-gray-700'}`}>
                     <Link className='sidebar-link' href={link.route}>
                       <Image
                         src={link.icon}
@@ -42,7 +42,7 @@ const Sidebar = () => {
               {navLinks.slice(6).map((link) => {
                   const isActive = link.route === pathname
                   return(
-                    <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'}`}>
+                    <li key={link.route} className={`sidebar-nav_element group ${isActive ? 'bg-gradient-to-r from-red-500 to-indigo-700 text-white' : 'text-gray-700'}`}>
                       <Link className='sidebar-link' href={link.route}>
                         <Image
                           src={link.icon}
